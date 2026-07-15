@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rilynd Carter — AI Automation Developer</title>
-<meta name="description" content="AI Automation Developer. Built Benson — a 160+ module autonomous AI system running 7 production sites 24/7 for $35/month.">
+<title>Rilynd Carter - AI Automation Developer</title>
+<meta name="description" content="AI Automation Developer. Built Benson, a 160+ module autonomous AI system running 7 production sites 24/7 for $35/month.">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -85,19 +85,12 @@ pre{background:var(--bg2);border:1px solid var(--border);border-radius:8px;paddi
 .tag-green{background:#052e16;color:var(--green);border:1px solid #166534}
 .tag-blue{background:#0c1a2e;color:#60a5fa;border:1px solid #1e40af}
 
-/* CONTACT */
-.contact-box{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:48px;text-align:center}
-.contact-box h2{margin-bottom:12px;font-family:system-ui,sans-serif}
-.contact-box p{color:var(--muted);margin-bottom:32px;font-family:system-ui,sans-serif}
-.contact-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-
 footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-top:1px solid var(--border);font-family:system-ui,sans-serif}
 
 @media(max-width:640px){
   nav{padding:12px 16px}.nav-links{display:none}
   section{padding:72px 16px}
   .arch-grid{grid-template-columns:1fr}
-  .contact-box{padding:32px 20px}
   .stats-bar{grid-template-columns:1fr 1fr}
 }
 </style>
@@ -117,10 +110,10 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-badge"><span class="dot"></span> Open to work — open to relocation</div>
+  <div class="hero-badge"><span class="dot"></span> Open to work, open to relocation</div>
   <h1>I build AI systems<br>that run <span>without me.</span></h1>
   <p class="hero-desc">
-    Self-taught AI automation developer. I designed and shipped <strong style="color:#fff">Benson</strong> —
+    Self-taught AI automation developer. I designed and shipped <strong style="color:#fff">Benson</strong>,
     an autonomous agent system with 160+ modules managing 7 production websites, 6,500+ published posts,
     and full business operations 24/7 for $35/month. No team. No degree. Running right now.
   </p>
@@ -141,7 +134,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
 
 <!-- BENSON OVERVIEW -->
 <section id="benson">
-  <div class="label">Project — Benson</div>
+  <div class="label">Project: Benson</div>
   <h2>A company that runs itself</h2>
   <p class="sub">Built from scratch using Python 3.12 and Anthropic's Claude API, starting June 2026. Every 4 hours Benson wakes up, runs 30+ autonomous steps, and goes back to sleep. No human input required.</p>
 
@@ -179,7 +172,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
     <div class="arch-card">
       <div class="module-count">Core</div>
       <h3>Autopilot Engine</h3>
-      <p>Central orchestrator running 30+ steps per cycle on a 4-hour schedule. Each step is try/catch isolated — one failure never stops the cycle. Full activity log written to disk on every action.</p>
+      <p>Central orchestrator running 30+ steps per cycle on a 4-hour schedule. Each step is try/catch isolated, so one failure never stops the cycle. Full activity log written to disk on every action.</p>
     </div>
     <div class="arch-card">
       <div class="module-count">Content</div>
@@ -204,12 +197,12 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
     <div class="arch-card">
       <div class="module-count">Growth</div>
       <h3>Email Capture</h3>
-      <p>Injects niche-specific Mailchimp signup forms into every post via direct POST integration — no backend required. Honeypot spam protection. Tracks injection state per post to avoid duplicates.</p>
+      <p>Injects niche-specific Mailchimp signup forms into every post via direct POST integration, no backend required. Honeypot spam protection. Tracks injection state per post to avoid duplicates.</p>
     </div>
     <div class="arch-card">
       <div class="module-count">LLM</div>
       <h3>Prompt Architecture</h3>
-      <p>Context-isolated prompts per module — no shared state between tasks. Structured JSON output validation with retry on malformed response. Model routing: Haiku for volume, Sonnet for quality-critical tasks.</p>
+      <p>Context-isolated prompts per module, no shared state between tasks. Structured JSON output validation with retry on malformed response. Model routing: Haiku for volume, Sonnet for quality-critical tasks.</p>
     </div>
     <div class="arch-card">
       <div class="module-count">Cost</div>
@@ -226,11 +219,11 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
   <p class="sub">Real code from Benson's production system.</p>
 
   <div class="code-section">
-    <div class="code-label"><span>autopilot_engine.py</span> — error-isolated cycle step pattern</div>
+    <div class="code-label"><span>autopilot_engine.py</span>: error-isolated cycle step pattern</div>
     <pre><span class="kw">def</span> <span class="fn">run_autopilot_cycle</span>(<span class="var">silent</span>=<span class="kw">False</span>):
     <span class="var">actions</span>, <span class="var">errors</span> = [], []
 
-    <span class="cm"># Every step is isolated — one failure never kills the cycle</span>
+    <span class="cm"># Every step is isolated, one failure never kills the cycle</span>
     <span class="kw">try</span>:
         <span class="kw">from</span> core.skills.niche_manager <span class="kw">import</span> run_all_niches
         <span class="var">result</span> = <span class="fn">run_all_niches</span>(posts_per_cycle=<span class="num">2</span>)
@@ -249,7 +242,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
   </div>
 
   <div class="code-section">
-    <div class="code-label"><span>niche_content_engine.py</span> — Claude API product research with dedup</div>
+    <div class="code-label"><span>niche_content_engine.py</span>: Claude API product research with dedup</div>
     <pre><span class="kw">def</span> <span class="fn">_ai_product_ideas</span>(<span class="var">niche_focus</span>, <span class="var">count</span>=<span class="num">8</span>, <span class="var">exclude</span>=<span class="kw">None</span>):
     <span class="cm"># Pass done list so Claude avoids already-published products</span>
     <span class="var">avoid_block</span> = <span class="st">""</span>
@@ -273,7 +266,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
   </div>
 
   <div class="code-section">
-    <div class="code-label"><span>site_auditor.py</span> — self-healing dead link detection</div>
+    <div class="code-label"><span>site_auditor.py</span>: self-healing dead link detection</div>
     <pre><span class="kw">def</span> <span class="fn">audit_all_sites</span>(<span class="var">max_posts_per_site</span>=<span class="num">30</span>):
     <span class="var">results</span> = {}
     <span class="kw">for</span> <span class="var">niche</span>, <span class="var">site_dir</span> <span class="kw">in</span> NICHE_DIRS.items():
@@ -291,21 +284,20 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
   </div>
 </section>
 
-<!-- CONTACT -->
 <!-- PLAIN LANGUAGE -->
 <section id="plain">
   <div class="label">In Plain Language</div>
-  <h2>What Benson actually does, without the jargon</h2>
-  <p class="sub">I can talk architecture all day, but the people who matter most usually aren't engineers. Here's the same project explained the way I'd explain it to someone non-technical.</p>
+  <h2>What Benson actually does</h2>
+  <p class="sub">Skip the jargon. Here's the same project explained the way I'd explain it to someone who isn't technical.</p>
 
   <div class="arch-grid">
     <div class="arch-card" style="grid-column:1/-1">
       <p style="font-size:.92em;line-height:1.9">
-        Imagine hiring a small team — a handful of writers, an SEO person, someone managing affiliate links, someone watching for things breaking — to run seven different websites, every single day, forever. That's expensive, and it's a lot of people to manage.
+        Normally, running seven websites well takes a small team. Someone writing content, someone doing SEO, someone managing links, someone watching for things breaking. That's a lot of people and a lot of cost.
         <br><br>
-        Benson is software that does that whole team's job by itself. Every four hours, it wakes up, decides what content is needed, researches it, writes it, checks its own work, publishes it, tells search engines it exists, fixes anything broken from the last cycle, and goes back to sleep. Nobody has to log in and tell it what to do. I don't review each post before it goes live — I built the checks so I don't have to.
+        Benson does that team's job by itself. Every four hours it wakes up, figures out what content is needed, writes it, checks its own work, publishes it, tells search engines it exists, fixes anything that broke last cycle, and goes back to sleep. I don't log in and tell it what to do, and I don't review every post before it goes live. I built the checks so I don't have to.
         <br><br>
-        The part I'm proudest of isn't the AI writing the content — it's that I built the whole thing to run without me standing over it, with no formal training, no team, and about the cost of a phone bill each month. If I can build something that reliable that's basically invisible to the person using it, that's the same skill as building a good internal tool for an organization that has one overworked person doing five jobs.
+        What I'm proudest of isn't the AI writing content. It's that I built something that runs on its own, with no formal training, no team, and about the cost of a phone bill a month. That's the same underlying skill as building a good tool for an organization where one person is already doing five jobs.
       </p>
     </div>
   </div>
@@ -314,13 +306,13 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
 <!-- WHY THIS, WHY NOW -->
 <section id="why">
   <div class="label">Why This, Why Now</div>
-  <h2>I know what it means to shape how someone turns out</h2>
+  <h2>Why I want to do this next</h2>
   <div class="arch-grid" style="margin-top:24px">
     <div class="arch-card" style="grid-column:1/-1">
       <p style="font-size:.92em;line-height:1.9">
-        I don't have formal nonprofit or community experience yet, and I'd rather say that plainly than dress it up. But I know firsthand what it means to be responsible for how another person turns out. As a stay-at-home dad, I raise my kids knowing that the small, consistent things — how I show up, what I teach them, whether I pay attention — are what actually determine who they become.
+        I don't have formal nonprofit or community experience yet, and I'd rather say that plainly than dress it up. What I do have is a lot of practice building things alone, from nothing, that keep working after I step back. Benson proved that to me.
         <br><br>
-        I believe that's true for people who aren't my kids too. A kid, an older person, someone in the middle of a hard stretch — one small, well-placed thing can change the direction of someone's life. Benson proved to me I can build real things alone, from nothing, that keep working after I step back. I'd like to point that same ability at helping people instead of generating revenue. This is where I'd like to start.
+        I'm a stay-at-home dad, and I spend most of my time responsible for how my kids turn out. That's taught me that small, consistent effort is usually what actually moves the needle for a person, more than any one big thing. I'd like to put the same kind of effort toward people who aren't my kids too, using the skills I already have instead of starting over. That's really it.
       </p>
     </div>
   </div>
