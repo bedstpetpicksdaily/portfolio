@@ -42,6 +42,9 @@ h2{font-size:clamp(1.4em,3vw,2em);font-weight:700;margin-bottom:8px;color:#fff}
 .btn-primary:hover{background:var(--accent2);color:#000}
 .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
 .btn-ghost:hover{border-color:var(--accent2);color:var(--accent2)}
+.btn-code{background:var(--accent2);color:#0a0a0f;font-size:1.05em;padding:14px 30px;box-shadow:0 0 0 3px rgba(167,139,250,.18);animation:codepulse 2.4s infinite}
+.btn-code:hover{background:#fff;color:#000}
+@keyframes codepulse{0%,100%{box-shadow:0 0 0 3px rgba(167,139,250,.18)}50%{box-shadow:0 0 0 6px rgba(167,139,250,.32)}}
 
 /* STATS BAR */
 .stats-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:48px}
@@ -118,8 +121,8 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
     and full business operations 24/7 for $27/month. No team. No degree. Running right now.
   </p>
   <div class="hero-links">
+    <a href="https://github.com/bedstpetpicksdaily/benson-engine" class="btn btn-code">&lt;/&gt; View the Source Code</a>
     <a href="#benson" class="btn btn-primary">See Benson</a>
-    <a href="https://github.com/bedstpetpicksdaily/benson-engine" class="btn btn-ghost">View the code</a>
     <a href="mailto:rilynd81@gmail.com" class="btn btn-ghost">rilynd81@gmail.com</a>
   </div>
 
@@ -246,7 +249,8 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:.78em;border-
 <section id="code">
   <div class="label">Code Samples</div>
   <h2>How it actually works</h2>
-  <p class="sub">Real code from Benson's production system.</p>
+  <p class="sub">Real code from Benson's production system — these are excerpts. Full source below.</p>
+  <a href="https://github.com/bedstpetpicksdaily/benson-engine" class="btn btn-code" style="margin-bottom:32px">&lt;/&gt; View the Source Code</a>
 
   <div class="code-section">
     <div class="code-label"><span>autopilot_engine.py</span>: error-isolated cycle step pattern</div>
